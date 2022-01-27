@@ -10,7 +10,7 @@ def strip(string):
     print(f"'{stripped}'")
     return stripped
 string = """
-  sefesfesf esfesf werfwef sss eee
+  sefesfesf esfesf werfwef sss eee.
 
 
      
