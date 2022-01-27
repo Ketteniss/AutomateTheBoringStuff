@@ -16,8 +16,14 @@ if len(sys.argv) == 3:
     if sys.argv[1].lower() == 'save':
         print('hey there')
         shelfFile[sys.argv[2]] = pyperclip.paste()  
+    if sys.argv[1].lower() == 'delete':
+        if sys.argv[2] in shelfFile:    
+            shelfFile.pop(sys.argv[2], None)
 
 elif len(sys.argv) == 2:
+    if sys.argv[1].lower()  == 'delete':
+        for key in shelfFile.keys():
+            shelfFile.pop(key, None)
     # argv[1] => argument
     if sys.argv[1].lower()  == 'list':
         pyperclip.copy(str(list(shelfFile.keys())))
@@ -32,3 +38,4 @@ elif len(sys.argv) == 2:
 
 shelfFile.close()
 sys.exit()
+
