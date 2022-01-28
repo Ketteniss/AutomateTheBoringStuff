@@ -1,9 +1,7 @@
 #! python3
 # mclip.py - A multi-clipboard program.
 
-TEXT = {'Mamo': """23538428""",
-        'vk1': """+491721687391""",
-        'vk2': """loGR^EZ110Gr"""}
+TEXT = {'Mamo': """23538428"""}
 
 import sys
 if len(sys.argv) < 2:

@@ -1,0 +1,25 @@
+Goal:   Program, possibly written in a way that makes it callable to 
+        other programs, to search all txt-files of specified directory 
+        for a regular expression which is specified as an argument. 
+        Print any line with a match into specified result file. 
+        Return integer count of all hits.
+        
+Args: reg(Regex), Dir_ToBeSearched(Path), Dir_Result(Path)
+Return: hits(Int)
+        & result.txt @Dir_Result
+
+modules needed: re          (make regex), 
+                os          (directory/path use),
+                sys         (take arguments)
+
+modules of 
+possible use:   pathlib    (translating paths between different os),
+                shelve     (saving results)
+
+Test: py regexMatch.pyw .*Regex.* C:\Users\Default.DESKTOP-SBK9Q3H\OneDrive\VSC\Python\AutomateTheBoringStuff\ReadingWritingFiles\TestDirForRegexMatch C:\Users\Default.DESKTOP-SBK9Q3H\OneDrive\VSC\Python\AutomateTheBoringStuff\ReadingWritingFiles\TestDirForRegexMatch\resultsHere
+
+Mistakes:       - forgot to extent all paths used
+                - used readline() method instead of readlines() method (haha)
+                - syntax for regex had a couple mistakes
+
+Status: Done!
