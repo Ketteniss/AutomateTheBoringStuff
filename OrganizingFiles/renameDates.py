@@ -36,10 +36,9 @@ for file in os.listdir():
     month, days, years = moAmeDates.group(2), moAmeDates.group(4), moAmeDates.group(6)
 
     # Form the European-style filename.
-    euroDateFileName = f'{before}{days}-{month}-{years}{after}'
+    eurName = f'{before}{days}-{month}-{years}{after}'
 
     # Get the full, absolute file paths.
-    fullabsPath = Path.cwd() / file
     # Rename the files.
-    #shutil.move(fullabsPath, Path.cwd() / euroDateFileName)
-    print(f'{fullabsPath} to {Path.cwd() / euroDateFileName}')
+    shutil.move(Path.cwd() / file, Path.cwd() / eurName)
+    
