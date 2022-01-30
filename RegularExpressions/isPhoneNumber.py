@@ -7,7 +7,7 @@ if not isinstance(sys.argv[1], str):
     print('Error: Input must be string')
     sys.exit()"""
 
-# A program to verify if a string as an argument
+# A program to verify if string given as argument
 # is an american phone number
 
 def isPhoneNumber(text):
